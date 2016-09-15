@@ -1,5 +1,12 @@
 # Fork of thoughtbot dotfiles
----
+------------
+
+Requirements
+------------
+
+Set zsh as your login shell:
+
+    chsh -s $(which zsh)
 
 ## Install
 
@@ -35,13 +42,6 @@ Install the dotfiles
 Re-run `rcup` anytime
 
     rcup
-
-Requirements
-------------
-
-Set zsh as your login shell:
-
-    chsh -s $(which zsh)
 
 Install (Info Only)
 -------
