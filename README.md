@@ -1,4 +1,4 @@
-# Fork of thoughtbot dotfiles
+Fork of thoughtbot dotfiles
 ------------
 
 Requirements
