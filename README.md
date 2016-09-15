@@ -1,8 +1,6 @@
-Fork of thoughtbot dotfiles
-------------
+## Fork of thoughtbot dotfiles
 
-Requirements
-------------
+## Requirements
 
 Set zsh as your login shell:
 
@@ -12,9 +10,14 @@ Set zsh as your login shell:
 
 These installation instructions take precedence over the thoughtbot directions below
 
-Clone the repo
+Clone the repo and update upstream
 
     git clone https://github.com/rickpeyton/tb-dotfiles.git ~/dotfiles
+    cd ~/dotfiles
+    remote add upstream git@github.com:thoughtbot/dotfiles.git
+    git fetch upstream
+    git rebase upstream/master
+    cd
 
 Install rcup
 
@@ -43,8 +46,7 @@ Re-run `rcup` anytime
 
     rcup
 
-Install (Info Only)
--------
+## Install (Info Only)
 Straight from thoughtbot
 
 Clone onto your laptop:
