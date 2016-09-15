@@ -1,7 +1,40 @@
-thoughtbot dotfiles
-===================
+# Fork of thoughtbot dotfiles
+---
 
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
+## Install
+
+These installation instructions take precedence over the thoughtbot directions below
+
+Clone the repo
+
+    git clone https://github.com/rickpeyton/tb-dotfiles.git ~/dotfiles
+
+Install rcup
+
+*OS X with Homebrew*
+
+    brew tap thoughtbot/formulae
+    brew install rcm
+
+*Ubuntu*
+
+    sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+    sudo apt-get update
+    sudo apt-get install rcm
+
+*CentOS*
+
+    cd /etc/yum.repos.d/
+    curl -O http://download.opensuse.org/repositories/utilities/CentOS_6/utilities.repo
+    yum install rcm
+
+Install the dotfiles
+
+    env RCRC=$HOME/dotfiles/rcrc rcup
+
+Re-run `rcup` anytime
+
+    rcup
 
 Requirements
 ------------
@@ -10,8 +43,9 @@ Set zsh as your login shell:
 
     chsh -s $(which zsh)
 
-Install
+Install (Info Only)
 -------
+Straight from thoughtbot
 
 Clone onto your laptop:
 
