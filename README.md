@@ -46,6 +46,10 @@ Re-run `rcup` anytime
 
     rcup
 
+## Install dotfiles-local (optional)
+
+[dotfiles-local repo](https://github.com/rickpeyton/dotfiles-local)
+
 ## Install (Info Only)
 Straight from thoughtbot
 
