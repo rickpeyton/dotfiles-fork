@@ -14,7 +14,7 @@ Clone the repo and update upstream
 
     git clone https://github.com/rickpeyton/tb-dotfiles.git ~/dotfiles
     cd ~/dotfiles
-    remote add upstream git@github.com:thoughtbot/dotfiles.git
+    git remote add upstream git@github.com:thoughtbot/dotfiles.git
     git fetch upstream
     git rebase upstream/master
     cd
