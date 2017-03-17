@@ -22,11 +22,21 @@ session_exists() {
 
 add_window() {
   tmux new-window -d -t "$1:" -n "$2" -c "$3"
+  tmux select-window -t "$2"
+  tmux split-window -v -c "$3"
+  tmux resize-pane -D 15
+  tmux select-pane -t 1
+  tmux split-window -h -c "$3"
 }
 
 new_session() {
   cd "$3" &&
   tmux new-session -d -s "$1" -n "$2" $4
+  tmux split-window -v -c "$3"
+  tmux resize-pane -D 15
+  tmux select-pane -t 1
+  tmux split-window -h -c "$3"
+  tmux select-pane -t 1
 }
 
 restore() {
