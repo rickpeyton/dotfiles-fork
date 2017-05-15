@@ -44,3 +44,5 @@ _load_settings "$HOME/.zsh/configs"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
